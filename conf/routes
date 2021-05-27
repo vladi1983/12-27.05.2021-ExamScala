@@ -1,0 +1,6 @@
+GET /                   controllers.HomeController.index
+GET /person             controllers.PersonController.getAllPerson
+GET /client             controllers.ClientController.getAllClient
+GET /client/:min/:max   controllers.ClientController.searchByAge(min:Int,max:Int)
+GET /search/client/:str controllers.ClientController.searchByRequest(str:String)
+
